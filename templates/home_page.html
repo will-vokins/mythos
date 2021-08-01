@@ -1,0 +1,29 @@
+{% extends "layouts/full_width.html" %}
+{% block content %}
+    <section id="console" onclick='document.getElementById("commandInput").focus();'>
+        <pre id="output">
+<span class="preDim">
+• ▌ ▄ ·.  ▄· ▄▌▄▄▄▄▄ ▄ .▄      .▄▄ · 
+·██ ▐███▪▐█▪██▌•██  ██▪▐█▪     ▐█ ▀. 
+▐█ ▌▐▌▐█·▐█▌▐█▪ ▐█.▪██▀▐█ ▄█▀▄ ▄▀▀▀█▄
+██ ██▌▐█▌ ▐█▀·. ▐█▌·██▌▐▀▐█▌.▐▌▐█▄▪▐█
+▀▀  █▪▀▀▀  ▀ •  ▀▀▀ ▀▀▀ · ▀█▄▀▪ ▀▀▀▀ 
+
+<u>Welcome to Mythos RPG</u>
+
+<strong>Author</strong>      {{ author }}
+<strong>Version</strong>     {{ version }}
+<strong>Updated</strong>     {{ updated }}
+
+<u>Please log in or create a character</u>
+
+<strong>Login</strong>       login &lt;username&gt; &lt;password&gt;
+<strong>Create</strong>      register &lt;username&gt; &lt;password&gt; &lt;email&gt;
+</span>
+</pre>
+    </section>
+
+    <section id="commandLine">
+        <input autocomplete="off" placeholder="&gt;" id="commandInput" type="text" autofocus/>
+    </section>
+{% endblock content %}

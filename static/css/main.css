@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+#console {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+#console #output {
+    padding: 10px;
+    width: 100%;
+    overflow: scroll;
+    word-break: normal !important;
+    word-wrap: normal !important;
+    white-space: pre !important;
+    font-size: 16px;
+}
+
+#commandLine {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 30px;
+    background-color: green;
+}
+
+#commandLine #commandInput {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    line-height: 30px;
+    border: 0;
+    color: white;
+    font-family: monospace;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.preDim {
+    color: rgb(177, 177, 177);
+}
